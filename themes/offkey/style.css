@@ -18,11 +18,15 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
-.site-branding {
+.site-branding h1 {
+  display: none;
+  height: 0;
+  width: 0; }
+
+.site-branding .logo {
+  height: 100px;
   background-image: url("assets/images/logo.png");
   background-repeat: no-repeat; }
-  .site-branding h1 {
-    display: none; }
 
 .skip-link {
   display: none;
