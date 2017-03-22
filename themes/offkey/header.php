@@ -24,19 +24,12 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'offkey' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="header-nav">
-			<div class="site-branding">
-				<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<div class="logo">
-				</logo>
-			</div><!-- .site-branding -->
-
+			<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<div class="logo">
+			</div>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				<div class="header-search"><?php get_search_form(); ?></div>
 			</nav><!-- #site-navigation -->
-		</div>
 	</header><!-- site-header -->
 
 	<div id="content" class="site-content">

@@ -1,12 +1,29 @@
-.site-branding {
+.site-header {
+        margin-top: 13px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         h1 {
             display: none;
             height: 0;
             width: 0;
         }
         .logo {
-            height: 100px;        
+            height: 100px;
+            width: 20%;        
             background-image: url("assets/images/logo.png");
             background-repeat: no-repeat;
-            }   
+            }
+        .main-navigation {
+            width: 40%;
+            .menu {
+                ul {
+                    display: flex;
+                    list-style-type: none;
+                    li {
+                        margin-left: 10%;
+                    }
+                }
+            }
+        }   
     }

@@ -63,7 +63,7 @@ gulp.task('browser-sync', function() {
    ];
 
     browserSync.init(files, {
-        proxy: 'localhost:8888/offkey',
+        proxy: 'localhost:8000/offkey',
     });
 
     gulp.watch(files).on('change', browserSync.reload);

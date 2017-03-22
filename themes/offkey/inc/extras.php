@@ -37,3 +37,22 @@ function offkey_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'offkey_pingback_header' );
+
+/**
+ * Custom About Page background image
+ */
+
+function my_styles_method() {
+		if(!is_page_template('about.php')) {
+			return;
+		}
+	$url=CFS()->get('about_background_image');
+	
+	$custom_css="
+				.about-hero{
+					background-image: linear-gradient( to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100% ),url({$url});
+					}";
+			wp_add_inline_style( 'offkey-style', $custom_css);
+}
+add_action('wp_enqueue_scripts' , 'my_styles_method');
+
