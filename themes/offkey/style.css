@@ -77,11 +77,8 @@ table {
     display: none;
     height: 0;
     width: 0; }
-  .site-header .logo {
-    height: 100px;
-    width: 20%;
-    background-image: url("assets/images/logo.png");
-    background-repeat: no-repeat; }
+  .site-header .logo img {
+    height: 100px; }
   .site-header .main-navigation {
     width: 40%; }
     .site-header .main-navigation .menu ul {

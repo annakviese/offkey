@@ -26,6 +26,7 @@
 	<header id="masthead" class="site-header" role="banner">
 			<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<div class="logo">
+				<img src="<?php echo get_template_directory_uri() . '/assets/images/offkey-logo.png'; ?>" class="logo-img" alt="offkey improv logo" />
 			</div>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
