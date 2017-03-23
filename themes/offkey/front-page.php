@@ -6,9 +6,8 @@
  */
 
 get_header(); ?>
-            <section class="banner-image">
-                     <img src="<?php echo get_template_directory_uri() . '/assets/images/disney-musical.png'; ?>" alt="disney musical banner" />
+            <section class="banner">
+                   <?php echo CFS()->get('banner_image') ?>
             </section>
-
 
 <?php get_footer(); ?>
